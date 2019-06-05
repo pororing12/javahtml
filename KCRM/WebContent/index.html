@@ -3,6 +3,7 @@
 <head>
 <meta charset="EUC-KR">
 <script> 
+/*
 console.log("AJAX 테스트");
 document.writeln("JavaScript Test");
 document.writeln(this);
@@ -10,13 +11,28 @@ alert('fjakslfjkalsf'+ this);
 var v_test;
 window.alert(v_test);
 v_test = 100;
+
 window.alert(v_test + 200);
 v_test = "100";
 window.alert(v_test + 200);
-
-document.writeln("100 : " + typeof 100);
+*/
+//.앞에 있는건 문서안에 참고 할 수 있는 객체
+document.writeln("100 : " + typeof 100 + "<br>");
 document.writeln("3. 14 " + typeof 3.14);
-document.writeln("자바" + typeof "자바")
+document.writeln("자바" + typeof "자바");
+document.writeln("function" + typeof function(){} + "<br>");
+document.writeln("new Object() : " + typeof new Object() + "<br>");
+var result;
+document.writeln("선언되지 않은 변수 : " + typeof result + "<br>");
+
+
+window.onload = function() {
+	alert('윈도우 onload');
+}
+
+function abc() {
+	alert("abc");
+}
 </script>
 <title>블록체인 기반 계약시스템 포털</title>
 </head>
@@ -27,7 +43,7 @@ document.writeln("자바" + typeof "자바")
 	<li> <a href = "login.html"></a>로그인</li>
 	<li> 서비스 센터</li>
 	
-
+	<input type = "button" value = "button" onclick = "abc()">
 </ul>
 </body>
 </html>

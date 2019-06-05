@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+document.write("<h3> 다양한 연산의 결과</h3>");
+var x=10, y=5, z=5.0;
+var a,b,c,d,e ;
+a = ++x - y ;
+b = x & y; // 비트 AND 연산자
+c = x | y ; // 비트 OR 연산자
+d = x === z ; // y, z 의 값과 자료형 모두 같은가
+e = ( x > y ) && ( x < y ) // 관계 연산자, 논리연산자
+x %= y ;
+document.write("x=10, y=5, z=5.0 일 때 <br><br>");
+document.write("++x - y : " + a + " <br>")
+document.write("x & y : " + b + " <br>")
+document.write("x | y : " + c + " <br>")
+document.write("x === z : " + d + " <br>")
+document.write("( x > y ) && ( x < y ) : " + e + " <br>")
+document.write("x %= y : " + x + " <br>")
+</script>
+</head>
+<body>
+	<input type="button" value="Button" onclick="abc()">
+</body>
+</html>
