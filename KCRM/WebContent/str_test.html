@@ -12,8 +12,20 @@
 
     for (var i in token)
     {
-        doucment.writeln(token[i] + '<br>');
+        document.writeln(token[i] + '<br>')
     }
+    //960101-1872222
+    var yy = token[0].slice(0, 2);
+    var mm = token[0].slice(2, 4);
+    var dd = token[0].slice(4, 6);
+
+    var birthday = new Date();
+    birthday.setFullYear(
+        parseInt("19"+yy),
+        parseInt(mm), parseInt(dd));
+
+        var currentday = new Date();
+        document.writeln("birthday = " + birthday.toDateString());    
     </script>
 </body>
 </html>
