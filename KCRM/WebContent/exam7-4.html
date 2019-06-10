@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<script>
+function pr(msg, arr) {document.write(msg + arr.toString() + "<br>");}
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+<h3> Array 객체의 메소드 활용</h3>
+<script>
+var a = new Array("황", "김", "이");
+var b = new Array("박");
+var c;
+
+pr("배열 a = ", a);
+pr("배열b = ", b);
+document.write("<hr>");
+
+c = a.concat(b); //c는 a와 b 연결한 새 배열
+pr("c = a.concat(b)후  c = ", c); 
+pr("c = a.concat(b)후  a = ", a);
+
+c = a.join("##"); 
+pr("c = a.join() 후  c = ", c);
+pr("c = a.join() 후  a = ", a);
+
+c = a.reverse(); 
+pr("c = a.reverse() 후  c = ", c);
+pr("c = a.reverse() 후  a = ", a);
+
+c = a.slice(1, 2);//
+pr("c = a.slice(1, 2) 후  c = ", c);
+pr("c = a.slice(1, 2) 후  a = ", a);
+
+c = a.sort(); //오름순
+pr("c = a.sort() 후 c = ", c);
+pr("c = a.sort() 후 a = ", a);
+
+c = a.toString();
+document.write("a.toString() : ", c);
+</script>
+</body>
+</html>
