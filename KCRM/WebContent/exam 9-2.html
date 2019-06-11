@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script>
+var p ;
+function init(){
+    p = document.getElementById("p");
+    p.onmouseover = over;
+    p.onmouseout = out;
+}
+
+function over() {
+    p.style.backgorunColor = "orchid";
+}
+function out() {
+    p.style.backgorunColor = "white";
+}
+</script>
+</head>
+<body onload = "init()">
+    <h3>DOM</h3>
+<hr>
+<p id = "p">orchid</p>
+</body>
+</html>

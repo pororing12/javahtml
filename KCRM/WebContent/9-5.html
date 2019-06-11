@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<p id = "p">mouse</p>
+<button onclick = "f(event)">click</button>
+<script>
+function f(e) {
+    alert(e.type);
+}
+
+document.getElementById("p").onmouseover = f;
+doucment.getElementById("p").onmouseout = f;
+</script>
+</body>
+</html>
