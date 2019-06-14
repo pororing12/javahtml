@@ -1,0 +1,92 @@
+/*각 패널의 일반적인 스타일입니다.*/
+body {
+	color: #999;
+}
+p {
+	margin: 0 0 2em;
+}
+h1 {
+	margin: 0;
+}
+a {
+	color: #339;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+div {
+	padding: 20px 0;
+	border-bottom: solid 1px #ccc;
+}
+
+/* button 버튼의 전체적인 스타일을 적용해줍니다.
+ ---------------------------------------------- */
+.button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	*display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3); /*텍스트에 그림자를 적용해 줍니다. x,y좌표,퍼짐정도,색상을 적용해줍니다.*/
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em; /*박스의 모서리면을 둥글게 만들어줍니다. 값이 높을수록 더욱 더 둥글게 됩니다.*/
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+/*버튼에 마우스를 올렸을 때 적용되는 스타일입니다.*/
+.button:hover {
+	text-decoration: none;
+}
+/*버튼에 마우스를 클릭했을 때 적용되는 스타일입니다.*/
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.bigrounded {
+	-webkit-border-radius: 2em;
+	-moz-border-radius: 2em;
+	border-radius: 2em;
+}
+.medium {
+	font-size: 12px;
+	padding: .4em 1.5em .42em;
+}
+.small {
+	font-size: 11px;
+	padding: .2em 1em .275em;
+}
+
+/* color styles
+ ---------------------------------------------- */
+
+/* white */
+.white {
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+	background: -moz-linear-gradient(top,  #fff,  #ededed);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+}
+.white:hover {
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
+	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
+}
+.white:active {
+	color: #999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
+	background: -moz-linear-gradient(top,  #ededed,  #fff);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+}
