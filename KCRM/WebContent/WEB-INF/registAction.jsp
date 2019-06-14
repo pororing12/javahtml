@@ -13,7 +13,7 @@
 <body bgcolor="#ffffff">
 	
 <sql:update dataSource="${ds}" var="customer">
-    INSERT INTO customer (id, name, pw, birth, cell_num, email) VALUES (?, ?, PASSWORD(?), ?, ?, ?)
+    INSERT INTO customer (id, name, pw, birth, cell_num, email) VALUES (?, ?, ?, ?, ?, ?)
     <sql:param value='${param["id"]}'/>
     <sql:param value='${param["name"]}'/>
     <sql:param value='${param["pw"]}'/>

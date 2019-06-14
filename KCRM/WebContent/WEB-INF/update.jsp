@@ -28,10 +28,10 @@
 function update() {
 	var form = document.joinForm;
 	
-	if(email_id.value != "")
-		form.email.value = email_id.value + "@" + form.email_cust.value;
+	//if(email_id.value != "")
+	//	form.email.value = email_id.value + "@" + form.email_cust.value;
 	
-	form.cell_num.value = form.emppcs1.value+"-"+form.emppcs2.value+"-"+form.emppcs3.value;
+	//form.cell_num.value = form.emppcs1.value+"-"+form.emppcs2.value+"-"+form.emppcs3.value;
 	
 	form.submit();
 }

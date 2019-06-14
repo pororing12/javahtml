@@ -43,6 +43,7 @@ function update_cust() {
 		
 	<form id="custForm" name="custForm" action="list.jsp" method="post">
 		<input id="sn" name="sn" type="hidden" value="${param.sn}" />
+		
 	</form>
 		
 	<table width="745" border="0" cellpadding="0" cellspacing="0" class="defTable_02"  >

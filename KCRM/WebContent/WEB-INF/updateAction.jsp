@@ -13,7 +13,7 @@
 <body bgcolor="#ffffff">
 	
 <sql:update dataSource="${ds}" var="customer">
-    UPDATE customer SET id=?, name=?, pw=PASSWORD(?), birth=?, cell_num=?, email=? WHERE sn=${param.sn}
+    UPDATE customer SET id=?, name=?, pw=?, birth=?, cell_num=?, email=? WHERE sn=${param.sn}
     <sql:param value='${param["id"]}'/>
     <sql:param value='${param["name"]}'/>
     <sql:param value='${param["pw"]}'/>
